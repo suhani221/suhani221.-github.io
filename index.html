@@ -2,114 +2,37 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Flexbox Card Grid</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <title>CodePen - Two-column Responsive layout - 2 of #15daysofcss</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
-
 <!-- partial:index.partial.html -->
-<section class="jumbotron text-center">
-  <div class="container">
-    <h1 class="jumbotron-heading">Album example</h1>
-    <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-    <p>
-      <a href="#" class="btn btn-primary my-2">Main call to action</a>
-      <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-    </p>
-  </div>
-</section>
-
-<ul class="cards">
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
+<div class="container">
+      <div class="column-1 box">
+        <h1>What is Lorem Ipsum?</h1>
+        <p>
+          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged
+        </p>
+      </div>
+      <div class="column-2 box">
+        <h1>What is Lorem Ipsum?</h1>
+        <p>
+          What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing
+          and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley
+          of type and scrambled it to make a type specimen book. It has survived
+          not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged
+        </p>
       </div>
     </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex Grow</div>
-        <p class="card__text">This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.</p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex Shrink</div>
-        <p class="card__text">This defines the ability for a flex item to shrink if necessary. Negative numbers are invalid.</p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex Basis</div>
-        <p class="card__text">This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means "look at my width or height property."</p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-  <li class="cards__item">
-    <div class="card">
-      <div class="card__content">
-        <div class="card__title">Flex</div>
-        <p class="card__text">This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto. </p>
-        <button class="btn btn--block card__btn">Button</button>
-      </div>
-    </div>
-  </li>
-</ul>
 <!-- partial -->
-<div class="responsive-two-columns">
-  <div style="background-color: rgb(145, 53, 53);">1</div>
-  <div style="background-color: blueviolet;">2</div>
-</div>
-
+  
 </body>
 </html>
