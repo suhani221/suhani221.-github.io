@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboGPT</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/FAvicon trial art.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/FAvicon trial art.png">
+    <link rel="manifest" href="favicon/FAvicon trial art.png">
+    <link rel="mask-icon" href="favicon/FAvicon trial art.png" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/robogpt.css">
+    <link rel="stylesheet" href="css/footer_nav.css">
+    <style>
+        body{
+            margin: 0%;
+            background-color: rgb(0, 0, 0);
+        }
+        .col-main {
+            flex: 1;
+            background: #000000;
+            padding: 1em 5em 2em;
+            margin: 0 0 2px 0;
+        }
+
+        .col-complementary {
+            flex: 1;
+            background: #000000;
+            margin: 0 0 2px 0;
+        }
+        .responsive-two-columns{
+            padding-top: 0%;
+        }
+     
+    .curved-demo:before {
+    background-image: url('product_icon/footer_bg.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+  
+        /* Responsive */
+        @media only screen and (min-width: 640px) {
+            .responsive-two-columns {
+                display: flex;
+            }
+        }
+            .container-f{
+              margin-left: 9%;
+              margin-right: 8%;
+            }
+            
+            .container-2{
+              margin-left: 6%;
+              margin-right: 4%;
+            }
+
+            
+            #robogpt {
+                position: relative;
+                height: 95vh;
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+                }
+
+            #robogpt .vid-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 90%;
+            margin-top: 5%;
+            margin-bottom: 0%;
+            box-shadow: 1px 1px 1px 1px #4c4c4c;
+            margin-left: 4.5%;
+            height: 80%;
+            border-radius: 25px 25px 25px;
+            object-fit: cover;
+            filter: brightness(70%);
+            }
+            .container-f{
+              margin-left: 8%;
+              margin-right: 6%;
+            }
+            /* Default styles */
+.col-complementary {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.col-complementary p {
+  margin: 10px 0;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .col-complementary {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col-complementary {
+    font-size: 14px;
+  }
+}
+.chat-gpt{
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-bottom: 10px;
+  color: #ffffff;
+}
+:root .chat-gpt {
+  font-size: 14px;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  :root .chat-gpt {
+    font-size: calc( 18px + (26 - 18) * ( (100vw - 500px) / ( 800 - 500) ));
+  }
+}
+@media (min-width: 800px) {
+  :root .chat-gpt{
+    font-size: 26px;
+  }
+}
+          
+    </style>
+</head>
+<body>
+ <!-- NavBar Section Starts -->
+  <div class="top-nav">
+    <img src="product_icon/logo.png" style="padding-left: 5px; transform: scale(0.7, 0.7);" alt="Logo" height="63px" class="diagonal-image" >
+
+  <div class="menu">
+  <div class="menu-line"></div>
+  <div class="menu-line"></div>
+  <div class="menu-line"></div>
+  </div>
+  <div class="menu-close">
+  <div class="menu-line"></div>
+  <div class="menu-line"></div>
+  </div>
+</div>
+
+<div class="menu-panel text-center">
+  <div class="menu-title"><b>MENU</b></div>
+  <div class="menu-links">
+    <a href="index.html">Home</a>
+  <br>
+  <a href="usecases.html">UseCases</a>
+  <br>
+  <a href="robogpt.html">RoboGPT</a>
+  <br>
+  <a href="careers.html">Careers</a>
+  <br>
+  <a href="aboutus.html">About Us</a>
+  </div>
+</div>  
+<!-- NavBar Section Ends -->
+<section class="jumbotron">
+  <div class="container-2">
+    <h1 class="jumbotron-heading">
+      <span class="democratizing">Robot </span> 
+      <span style="font-size: 97px;font-weight: 600;" > GPT</span>
+    </h1>
+     <div class="responsive-two-column-grid">
+      <div class="discover-more-top">
+          <button>Subscribe to know more </button>
+      </div>
+      <div class="discover-moretop" >
+          <p id="para">We make it 10x easier and faster to safely program a robotic arm for industrial use cases. </p>
+            <p>
+      </div>
+  </div>
+  </div>
+</section>
+
+  <section id="robogpt">
+    <video src="main/ROBO GPT.mp4" class="vid-bg" autoplay loop muted preload="auto"></video> 
+</section> 
+<section class="chat-gpt">
+  <p >Robotic arms has been traditionally hard to program. Any change in environment or conditions requires reprogramming.
+
+  </p>
+    
+    
+    
+    <p>The programming model for robotic arms has not seen any upgrades despite the massive advancements in many areas of
+      machine learning especially in computer vision.</p>
+
+      <p>    We are changing that with RoboGPT. We have invented a cognitive programming framework that allows domain experts (and/or factory floor workers) to verbally program any use case with a robotic arm. All edge cases, including safety, are automatically taken care of by the system. The system is architected to be adaptive, can be taught and continuously learns about its environment.
+      </p>
+      <p>
+        We have custom trained vision models and use fine-tuned LLMs to interact with the robot. The first instance of our framework
+         implementation is limited to pick and place, it allows us to showcase how quickly we can reprogram 
+         industrial robotic arms.
+
+      </p>
+</section>
+    
+<!-- RoboGPT section ends
+    <div class="col-complementary"><p>Equipped with high-resolution cameras 
+      and intelligent image processing algorithms, it meticulously examines 
+      products for defects, inconsistencies, or abnormalities with unmatched
+       accuracy. </p>
+        <p>From manufacturing lines to quality assurance processes,
+          Orangewood Labs' robotic arm streamlines inspections, reducing human error and 
+          increasing productivity. Experience 
+        the power of automation in visual inspection with Orangewood Labs' robotic arm,
+         ensuring flawless products that meet the highest standards of excellence. </p>
+      </div> -->
+
+
+<section class="jumbotron-1">
+  <div class="container-2">
+    <h1 class="jumbotron-heading">
+      <span class="democratizing-c">ChatGPT </span> 
+      <span style="font-size: 77px;font-weight: 600;" > Upgrade</span>
+    </h1>
+     
+  </div>
+</section>
+
+  <div class="main">
+    <div class="container image-box">
+      <img src="product_icon/robo 20.webp" alt="Image description" 
+    style="max-width: 50%; height: 40%; border-radius: 22px; box-shadow: 0 0 10px rgba(112, 109, 109, 0.5);">
+       <div class="text-container">
+       
+
+          <p>At the core of our mission, we're reinventing the way robotic arms are programmed for industrial use by making
+            the process 10x simpler and quicker, while maintaining the highest level of safety.
+          </p>
+          <p>The complexities of traditional programming models for robotic arms have 
+            long been a roadblock in industrial settings. Altering the arm's functions 
+            based on changing environments or conditions demands significant reprogramming time and resources.
+
+         </p>
+         <p>
+        
+          Despite remarkable progress in various aspects of machine learning, 
+          particularly in computer vision, the programming model for robotic arms has 
+          remained stagnant. But we're setting a new paradigm with RoboGPT.
+
+       </p>
+         
+       </div>
+    </div>
+ </div>
+
+ <br>
+ <br>
+ <br>
+ <div class="main-1">
+  <div class="container image-box">
+    <div class="text-container">
+
+
+      
+      <p > With RoboGPT, we have devised an innovative cognitive programming framework. 
+        This game-changing system empowers domain experts and factory floor workers alike
+         to verbally instruct a robotic arm, 
+        simplifying the once complex programming process. Our framework has been meticulously
+         engineered to be adaptive and learn continuously about its environment, all while
+          addressing potential safety issues automatically.
+        </p>
+      <p>
+        This revolution is brought to life by leveraging cutting-edge advancements in Deep Learning, 
+        specifically in voice recognition, computer vision, and language processing (LLM). Our system 
+        can accurately process auditory inputs, creating intermediate programs that are deployed on 
+        these robotic arms without any manual intervention. This constant interaction loop between 
+        operator and robot fosters the evolution of the program, enabling us to solve complex problems
+         like differentiating between a red triangle and a blue square in mere minutes.
+      </p>
+      
+        <p>
+          In essence, we're not just changing the way robotic arms function in an industrial setting,
+          but also revolutionizing the possibilities of automation by making it accessible, flexible,
+           and exceptionally efficient. Stay tuned for this exciting journey as we redefine the landscape 
+           of industrial robotics.
+        </p>
+    </div>
+    <img src="product_icon/robo 40.webp" alt="Image description" 
+    style="max-width: 50%; height: 40%; border-radius: 22px; 
+    box-shadow: 0 0 10px rgba(112, 109, 109, 0.5);">
+  </div>
+</div>
+
+
+
+<footer>
+  <div class="curved-demo">
+    <div class="container-f">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h2 class="head-contact contact">Contact</h2>
+        <br>
+        <p class="text-justify">
+          <b style="color: #ffffff;">Orangewood Labs Inc.</b>
+          <p style="color: #ffffff;font-weight: 100">2 Marina Blvd, Building B, 2nd floor, San Francisco, CA 94123</p>
+           <b style="color: #ffffff;">Orangewood Research and Advancement Private Limited</b>
+           
+           <p style="color: rgb(255, 255, 255);font-weight: 100">A 48, Block A, Sector 67, Noida, Uttar Pradesh 201301</p> 
+          <p>
+          <p style="color: #ffffff; font-style: normal; font-weight: 700;
+          font-size: 15px; line-height: 10px; letter-spacing: 0.02em;">hellorobot@orangewood.co</p>
+        </p>
+        </p>
+        <br><br>
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.instagram.com/orangewoodlabs/?hl=en"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/OrangewoodLabs"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="https://www.youtube.com/@OrangewoodLabs"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/company/orangewood-labs/"><i class="fab fa-linkedin"></i></a></li>  
+          </ul>
+  
+      </div>
+  
+      <div class="col-6 col-md-3">
+        <h6 style="color:transparent;">Categories</h6>
+        <ul class="footer-links">
+        </ul>
+      </div>
+  
+      <div class="col-6 col-md-3">
+        <img src="product_icon/footer.png" alt="Your Image" style="float: right;">
+      </div>
+    </div>
+  
+  </div>
+  <br>
+  
+  </div>
+
+</footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>$(document).ready(function(){
+  $('.menu-close').hide();
+
+  $('.menu').click(function(){
+      $('.menu-panel').toggleClass('show');
+      $('.menu-background').toggleClass('show');
+      $('.menu').hide();
+      $('.menu-close').show();
+  });
+  $('.menu-close').click(function(){
+      $('.menu-panel').removeClass('show');
+      $('.menu-background').removeClass('show');
+      $('.menu').show();
+      $('.menu-close').hide();
+  });
+});</script>
+</body>
+</html>
