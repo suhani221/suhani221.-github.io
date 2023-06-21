@@ -1,0 +1,204 @@
+@font-face {
+	font-family: "geominast-bold";
+	src: url('../fonts/Geomanist-Bold.otf')  format('truetype');
+  }
+  @font-face {
+	font-family:"geominast-black";
+	src: url('../fonts/Geomanist-Black.otf')  format('truetype');
+  }
+  
+  @font-face {
+	font-family: "geominast-regular";
+	src: url('../fonts/Geomanist-Regular.otf')  format('truetype');
+  }
+  
+  body{
+    background: #000000;
+  }
+  
+ 
+  .jumbotron {
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+  margin-left: 0; 
+   background-color: #000000;
+    color: #ffffff;
+  }
+  
+
+  
+  .discover-more-top {
+    padding-top:23%;
+    padding-left: 1%;
+    color: #ffffff;
+  }
+  
+  .discover-moretop {
+    padding-top: 2.5%;
+    padding-right: 40%;
+    color: #000000;
+  }
+
+ /* tablet breakpoint */
+ @media (min-width: 768px) {
+  .responsive-two-column-grid {
+    display: grid;
+    grid-template-columns: 0.18fr 1.1fr;
+  }
+  .responsive-two-column-grid-1 {
+    display: grid;
+    grid-template-columns: 0.7fr 1.1fr;
+  }
+  
+}
+.democratizing {
+  justify-content: center;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: left;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+.discover-moretop #para{
+  justify-content: center;
+
+}
+  
+@media (min-width: 576px) {
+  .democratizing,
+  .robots {
+    font-size: 140px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 992px) {
+  .democratizing,
+  .robots {
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+  /* Button style */
+  .discover-more-top button {
+    background-color:transparent;
+
+    color: white;
+    font-size:18px;
+    margin-top: 18%;
+    border-radius: 32px;
+    padding: 5px 15px 5px 15px;
+    border: 2px solid #F04301
+}
+
+.discover-more-top button:hover{
+    color: white;
+    font-size: 18px;
+    background-color: #F04301;
+
+    border-radius: 32px;
+    border: 2px solid #F04301
+}
+  /* Paragraph style */
+  #para {
+    padding-right: 45%;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+  }
+  @media screen and (max-width: 790px) {
+    
+    .text-container {
+       font-size: 15px;
+       padding-left: 1px;
+       padding-right: 1px;
+    }
+    .para{
+      margin-right: 2%;
+      margin-left: 1%;
+    }
+    .discover-moretop #para{
+      justify-content: center;
+      font-size: 18px;
+      padding-left: 7px;
+      padding-right: 10px;
+  
+    }
+    .text-container {
+      margin: 20px 45px 55px;
+    }
+   .democratizing{
+    font-size: 80px;
+   }
+ 
+  
+  }
+
+.curved-demo:before {
+  background-image: url('product_icon/footer_bg.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+.card {
+  border: none;
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+.vgr-cards .card {
+  display: flex;
+  flex-flow: wrap;
+  flex: 100%;
+  margin-bottom: 40px;
+}
+.vgr-cards .card:nth-child(even) .card-img-body {
+  order: 2;
+}
+.vgr-cards .card:nth-child(even) .card-body {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card {
+    display: block;
+  }
+}
+.vgr-cards .card-img-body {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card-img-body {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+}
+.vgr-cards .card-img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1140px) {
+  .vgr-cards .card-img {
+    margin: 0;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+}
+.vgr-cards .card-body {
+  flex: 2;
+  padding: 0 0 0 1.25rem;
+}
+@media (max-width: 576px) {
+  .vgr-cards .card-body {
+    padding: 0;
+  }
+}

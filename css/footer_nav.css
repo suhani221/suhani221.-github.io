@@ -224,7 +224,6 @@
   
   .menu-close .menu-line {
    width: 22px;
-   position: fixed;
    height: 2.5px;
    background-color: rgb(251, 251, 251);
   }
