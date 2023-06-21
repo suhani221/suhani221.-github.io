@@ -45,7 +45,11 @@
       height: auto;
     }
   }
-  
+  @media (max-width: 767px) {
+        .hidden {
+          display: none;
+        }
+      }
 </style>
 </head>
 
@@ -134,7 +138,7 @@
 
     <!-- use cases starts -->
 
-    <section>
+    <section class="hidden">
       <h2 class="text-usecases" style="text-align: right;font-size:90px;padding-right: 7.1%;">Use</h2>
       <h2 class="text-usecases" style="text-align: right;font-size:76px;
       padding-right: 7.1%;color: #ffffff; font-family:'geominast-bold';" >
@@ -144,25 +148,20 @@
           <div class="horizontal">
             <section role="feed" class="cards">
               <article class="sample-card">
-                <picture > <source srcset="main/Pick _ Place.mp4" type="video/mp4" > <img src="main/Pick _ Place.mp4"> </picture>
+                <video src="main/ROBO GPT.mp4" autoplay loop muted playsinline></video> 
 
-
-
-
+               
                 <!-- <video muted loop src="main/Pick _ Place.mp4" type='video/mp4'></video> -->
-                <p class="text-overlay">Pick PIKING</p>
+                <p class="text-overlay">Pick PICKING</p>
                 <p class="video-description">Reducing manual labor and empowering humans
                   to focus on higher-value tasks.
                 </p>
               </article>
 
               <article class="sample-card">
-                <video>
-                  <source muted class="vid3" src="main/Pick _ Place.mp4" type="video/mp4" />
-                </video>
-                <!-- <video src="main/Visual Inspection.mp4" muted class="vid3" 
-                loop></video> -->
-                <p class="text-overlay">VISUA INSPECTIN</p>
+                <video src="main/Visual Inspection.mp4" muted class="vid3" 
+                loop></video>
+                <p class="text-overlay">VISUAL INSPECTION</p>
                 <p class="video-description">Robotics unleash the potential of 
                 visual inspection, revolutionizing precision analysis and
                 enhancing quality control with unparalleled accuracy
@@ -170,7 +169,7 @@
               </article>
 
               <article class="sample-card">
-                <video src="main/Powder Coating.mp4" playsinline
+                <video src="main/Powder Coating.mp4" muted class="vid2" 
                 loop></video>
                 <p class="text-overlay">POWDER COATING</p>
                 <p class="video-description">Achieving flawless finishes with precision and efficiency, 
@@ -180,7 +179,7 @@
               </article>
 
               <article class="sample-card">
-                <video src="main/Bartending Bot.mp4" muted class="vid" controls
+                <video src="main/Bartending Bot.mp4" muted class="vid" 
                 loop></video>
                 <p class="text-overlay">BARTENDING BOT</p>
                 <p class="video-description">Robotic prowess effortlessly retrieves objects,
@@ -189,7 +188,7 @@
               </article>
 
               <article class="sample-card">
-                <video src="main/Spray Painting.mp4" muted class="vid3" controls 
+                <video src="main/Spray Painting.mp4" muted class="vid3" 
                 loop></video>
                 <p class="text-overlay">SPRAY PAINTING</p>
                 <p class="video-description">Reducing hazards and unlocking limitless creative
@@ -217,7 +216,7 @@
         <div id="sidebar-left">
         <div class="image-container">
           <img src="product_icon/Group 593.png" alt="Image 1">
-          <p>Sub-Milimeter Repeatability</p>
+          <p>Sub-Millimeter Repeatability</p>
         </div>
         <div class="image-container">
           <img src="product_icon/Group 595.png" alt="Image 2" >
