@@ -144,8 +144,9 @@
           <div class="horizontal">
             <section role="feed" class="cards">
               <article class="sample-card">
-                <video src="main/Pick _ Place.mp4" muted class="vid" 
-                loop></video>
+                <video id="myVideo" controls>
+                  <source src="main/Pick _ Place.mp4" muted class="vid"  type="video/mp4">
+                </video>
                 <p class="text-overlay">BIN PICKING</p>
                 <p class="video-description">Reducing manual labor and empowering humans
                   to focus on higher-value tasks.
@@ -295,6 +296,11 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="scripts/script.js"></script>
 <script>
+  window.addEventListener('load', function() {
+      var video = document.getElementById('myVideo');
+      video.src = 'new-video.mp4';
+    });
+    
   let videos = document.querySelectorAll(".vid, .vid2, .vid3");
   let videoDescriptions = document.querySelectorAll(".video-description");
 
