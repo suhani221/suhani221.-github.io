@@ -1,0 +1,175 @@
+@font-face {
+	font-family: "geominast-bold";
+	src: url('../fonts/Geomanist-Bold.otf')  format('truetype');
+  }
+  @font-face {
+	font-family:"geominast-black";
+	src: url('../fonts/Geomanist-Black.otf')  format('truetype');
+  }
+  
+  @font-face {
+	font-family: "geominast-regular";
+	src: url('../fonts/Geomanist-Regular.otf')  format('truetype');
+  }
+
+        body{
+            margin: 0%;
+            /* background: linear-gradient(116.68deg, #2E2E2E -4.56%, #000000 131.36%); */
+            background-color: black;
+        }
+        
+   
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .section .content {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3%;
+    }
+    
+    .section  img {
+      max-width: 100%;
+      height: 10%;
+      margin-bottom: 20px;
+    }
+    
+    .section .content h2 {
+    font-weight: 600;
+    font-size: 98px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding-left: 40%;
+
+    color: #FFFFFF;
+    line-height: 60px;
+    text-transform: uppercase;
+    }
+    .section .content h3 {
+        text-transform: uppercase;
+        font-weight: 200;
+        font-size: 52px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        padding-left: 40%;
+        color: #FFFFFF;
+        }
+        
+    .section .content button {
+        background-color:transparent;
+        color: white;
+        margin-top: 10%;
+        font-size:18px;
+        border-radius: 32px;
+         margin-left: 42%;
+         padding-left: 20px;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         padding-right: 20px;
+        border: 2px solid #F04301;
+        margin-bottom: 60%;
+    }
+
+
+    @media (max-width: 768px) {
+        body{
+            overflow-x: hidden;
+        }
+       
+        .section .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 3%;
+          }
+        
+        .section .content h3 {
+            text-transform: uppercase;
+            font-weight: 200;
+            font-size: 22px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            padding-left: 10%;
+            color: #FFFFFF;
+            }
+
+            .section .content h2 {
+                font-weight: 600;
+                font-size: 48px;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: #FFFFFF;
+                line-height: 60px;
+                text-transform: uppercase;
+                }
+                .section .content h3 {
+                    text-transform: uppercase;
+                    font-weight: 200;
+                    font-size: 42px;
+                    text-align: center;
+                    letter-spacing: 0.02em;
+                    color: #FFFFFF;
+                    }
+                    
+                .section .content button {
+                    background-color:transparent;
+                    color: white;
+                    margin-top: 10%;
+                    font-size:18px;
+                    border-radius: 32px;
+                     padding-left: 20px;
+                     padding-top: 10px;
+                     padding-bottom: 10px;
+                     padding-right: 20px;
+                    border: 2px solid #F04301;
+                }
+            
+    }
+    
+    .section .content button:hover{
+        color: white;
+        font-size: 18px;
+        background-color: #F04301;
+
+        border-radius: 32px;
+        border: 2px solid #F04301
+    }
+    
+    @media (min-width: 768px) {
+      .section {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      .section .content h2 {
+        margin-bottom: 0;
+        max-width: 50%;
+        text-align: left;
+      }
+      
+ .section img {
+    padding-right: 5%;
+        margin-bottom: 0;
+        width: 60%;
+      }
+    }
+
+     
+       
+
+          .section .content img {
+  max-width: 10%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .section .content img {
+    max-width: 0%; /* Adjust the value to your desired maximum width */
+  }
+}
+         

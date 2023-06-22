@@ -67,7 +67,7 @@
   }
   
   .discover-more-top {
-    padding-top:18%;
+    padding-top:16%;
     padding-left: 1%;
     color: #ffffff;
   }
@@ -92,7 +92,7 @@
   
   .btn-primary {
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 32px;
     border: 2px solid #F04301;
     color: #f4f4f4;
@@ -121,7 +121,7 @@
   @media (min-width: 768px) {
     .responsive-two-column-grid {
       display: grid;
-      grid-template-columns: 0.18fr 1.1fr;
+      grid-template-columns: 0.2fr 1.1fr;
     }
     .responsive-two-column-grid-1 {
       display: grid;
@@ -159,7 +159,7 @@
           background-color:transparent;
           color: white;
           font-size:18px;
-          margin-top: 12%;
+          margin-top: 4%;
           border-radius: 32px;
           padding: 5px 20px 5px 20px;
           border: 2px solid #F04301

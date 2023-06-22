@@ -70,7 +70,7 @@
   @media (min-width: 768px) {
     .responsive-two-column-grid {
       display: grid;
-      grid-template-columns: 0.18fr 1.1fr;
+      grid-template-columns: 0.25fr 1.1fr;
     }
     .responsive-two-column-grid-1 {
       display: grid;

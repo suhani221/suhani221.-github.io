@@ -26,7 +26,7 @@
     color: #ffffff;
   }
   .jumbotron-1 {
-    padding-top: 2text-containerrem;
+
     padding-bottom: 3rem;
   margin-left: 0; 
    background-color: #000000;
@@ -221,13 +221,14 @@
       justify-content: right;
       margin: 190 80px;
       max-width: 660px;
-      font-size: 15px;
+      font-size: 18px;
       color: #ffffff;
     }
     .chat-gpt p{
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
+      font-family: "geominast-regular";
+
+
+font-size: 20px;
 line-height: 36px;
 /* or 144% */
 
@@ -247,7 +248,7 @@ letter-spacing: 0.02em;
   @media screen and (max-width: 790px) {
     
     .text-container {
-       font-size: 15px;
+       font-size: 19px;
        padding-left: 1px;
        padding-right: 1px;
        color: #ffffff;
@@ -266,7 +267,13 @@ letter-spacing: 0.02em;
     .text-container {
       margin: 20px 45px 45px;
     }
-   
+    .chat-gpt{
+      padding-right: 90px;
+      padding-left: 90px;
+
+      padding-bottom: 10px;
+      color: #ffffff;
+    }
   
     .main {
       height: 90vh;
