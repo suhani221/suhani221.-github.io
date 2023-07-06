@@ -105,13 +105,13 @@ body {
 
 /* robogpt start */
 
-#robogpt {
+.robogpt-1 {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
 
-#robogpt .vid-bg {
+.robogpt-1 .vid-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -124,7 +124,7 @@ body {
   z-index: -1;
 }
 
-#robogpt .welcome-text {
+.robogpt-1 .welcome-text {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -133,14 +133,14 @@ body {
   color: #fff;
 }
 
-#robogpt .welcome-text h2 {
+.robogpt-1 .welcome-text h2 {
   font-size: 11rem;
   text-align: center;
   font-weight: 900;
 }
 
 
-#robogpt .welcome-text .btn {
+.robogpt-1 .welcome-text .btn {
   display: inline-block;
   padding: 12px 24px;
   width: 170px;
@@ -151,7 +151,7 @@ body {
 	transition: background-color 0.3s ease;
 }
 
-#robogpt .welcome-text .btn:hover {
+.robogpt-1 .welcome-text .btn:hover {
   border: 2px solid #F04301;
   background: transparent;
 
@@ -162,15 +162,15 @@ color: white;
 
 
 @media (max-width: 768px) {
-  #robogpt .welcome-text {
+  .robogpt-1 .welcome-text {
     width: 90%;
   }
   
-  #robogpt .welcome-text h2 {
+  .robogpt-1 .welcome-text h2 {
     font-size: 2rem;
   }
   
-  #robogpt .welcome-text .btn {
+  .robogpt-1 .welcome-text .btn {
     font-size: 1rem;
   }
 }
@@ -339,16 +339,15 @@ color: white;
   }
 
   #cookiePopup {
-    background-color: #ffffff;
+    background: linear-gradient(to bottom,#D9D9D9, #6A6A70);
     position: absolute;
     font-size: 14px;
-    width: 70vw;
+    width: 80vw;
     max-width: 42.85em;
-    font-family: "Poppins", sans-serif;
     text-align: justify;
     line-height: 1.8em;
     padding: 2em 1.4em;
-    border-radius: 6px;
+    border-radius: 36px;
     transition: all 0.5s ease-in;
   }
   #cookiePopup img {
@@ -360,9 +359,10 @@ color: white;
   }
   #cookiePopup p {
     text-align: center;
-    margin: 1.4em 0;
+    font-size: 16px;
+    margin: 1.4em 1em;
   }
-  #cookiePopup button {
+  /* #cookiePopup button {
     background-color: #F04301;
     border: #F04301;
     color: #ffffff;
@@ -371,8 +371,32 @@ color: white;
     display: block;
     position: relative;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 17px;
+  } */
+
+  #cookiePopup button{
+    margin-top: -25px;
+    font-size: 18px;
+    font-weight: 400;
+    height: 45px;
+    line-height: 40px;
+    width: 170px;
+    border-radius: 25px;
+    display: block;
+    position: relative;
+    margin: auto;
+    background: #F04301;
+    color: #ffffff;
+    border: 2px solid #F04301;
+    transition: background-color 0.3s ease;
   }
+  
+  #cookiePopup button:hover {
+    background-color: transparent;
+    border: 2px solid #F04301;
+    color: white;
+  }
+
   #cookiePopup a {
     color: #F04301;
   }

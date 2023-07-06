@@ -1,0 +1,9 @@
+<svg width="78" height="78" viewBox="0 0 78 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="tabler:resize">
+<rect id="Rectangle 424" x="21.0596" y="21.0605" width="35.88" height="35.88" rx="10" fill="#F04304"/>
+<g id="Group">
+<path id="Vector" d="M13 35.75V61.75C13 62.6119 13.3424 63.4386 13.9519 64.0481C14.5614 64.6576 15.388 65 16.25 65H42.25M13 19.5V16.25C13 15.388 13.3424 14.5614 13.9519 13.9519C14.5614 13.3424 15.388 13 16.25 13H19.5M35.75 13H42.25M58.5 13H61.75C62.6119 13 63.4386 13.3424 64.0481 13.9519C64.6576 14.5614 65 15.388 65 16.25V19.5M65 35.75V42.25M65 58.5V61.75C65 62.6119 64.6576 63.4386 64.0481 64.0481C63.4386 64.6576 62.6119 65 61.75 65H58.5" stroke="white" stroke-width="6.30769" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M13 39H35.75C36.612 39 37.4386 39.3424 38.0481 39.9519C38.6576 40.5614 39 41.388 39 42.25V65" stroke="white" stroke-width="6.30769" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
