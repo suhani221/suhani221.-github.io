@@ -19,18 +19,38 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/products.css">
     <link rel="stylesheet" href="css/footer_nav.css"> 
+
 <style>
   @font-face {
   font-family:"geominast-bold";
   src: url('fonts/Geomanist-Bold.otf')  format('truetype');
 }
 
-    .curved-demo:before {
-    background-image: url('product_icon/footer_bg.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    }
+.curved-demo:before {
+     background-image: url('/product_icon/footer_bg.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     }
+
+.robogpt-1 {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.robogpt-1 .vid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  margin-left: 2.5%;
+  height: 80%;
+  border-radius: 25px 25px 25px;
+  object-fit: cover;
+  filter: brightness(70%);
+  z-index: -1;
+}
     @media (max-width: 760px) {
     .text-usecases {
       font-size: 10vw;
@@ -50,26 +70,107 @@
           display: none;
         }
       }
+
+      @media only screen and (min-width: 768px) {
+  .usecases {
+    display: none;
+  }
+}
+
+      .home-container {
+  margin-top: 10%;
+  background-color: rgb(0, 0, 0);
+  height: 90vh;
+  padding-left: 100px;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+}
+
+.home-image {
+  height: 717px;
+  padding-top: 55px;
+}
+
+.home-text h1{
+  padding-top: 10%;
+  padding-left: 30%;
+  color: white;
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 15px;
+}
+.home-text h2{
+  padding-top: 10%;
+  padding-left: 30%;
+  color: white;
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 15px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  body{
+    overflow-x:hidden ;
+  }
+  .home-container {
+    height: 5vh;
+    padding-bottom: 455px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .home-image {
+    padding-right: 30px;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .home-text h1,
+  .home-text h2 {
+    padding-left: 0;
+    font-size: 50px;
+    text-align: center;
+  }
+}
 </style>
 </head>
 
 <body>
-
+  <a style="text-decoration: none;"href="comingsoon.html">
+    <div style="background: linear-gradient(270deg, rgba(44, 44, 44, 0.00) 0%, #2C2C2C 36.98%, #2C2C2C 63.54%, rgba(44, 44, 44, 0.00) 100%);" class="banner">
+      <div class="banner__content">
+        <div style="align-items: center;text-align: center;" class="banner__text">
+          <strong style="color: white;font-size: 20px;"> See our Robot Live Now!</strong> 
+        </div>
+      </div>
+    </div>
+  </a>
     <!-- NavBar Section Starts -->
     <div class="top-nav">
       <a href="index.html">
-      <img src="product_icon/logo.png" style="padding-left: 5px; transform: scale(0.7, 0.7);" alt="Logo" height="63px" class="diagonal-image" >
+        <img src="/product_icon/logo.png" style="padding-left: 5px; transform: scale(0.7, 0.7);" alt="Logo" height="63px" class="diagonal-image" >
+      </a>
+      <a href="https://cal.com/orangewoodlabs">
+      <button class="custom-button hidden">Book a Demo</button>
     </a>
-      <div class="menu">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        </div>
-        <div class="menu-close">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        </div>
+    <div class="menu">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
     </div>
+    <div class="menu-close">
+    <div class="menu-line"></div>
+    <div class="menu-line"></div>
+    </div>
+  </div>
 
     <div class="menu-panel text-center">
       <div class="menu-title"><b>MENU</b></div>
@@ -84,7 +185,7 @@
       <br>
       <a href="aboutus.html">About Us</a>
       <br>
-  <a href="community.html">Community</a>
+  <a href="raas.html">Services</a>
       </div>
     </div> 
     <!-- NavBar Section Ends -->
@@ -93,170 +194,204 @@
     <!-- Introductory Session Starts -->
 
     <section class="introductory">
-    <div class="content-1">
-      <div class="video-section">
-        <div class="video">
-          <video src="main/Website Intro.mp4" autoplay loop muted playsinline></video>
-        </div>
-      </div>
-    </div>
-      <div class="text-section">
-        <h1>ROBOTS</h1>
-        <h2>ARE HERE!</h2>
-        <div class="text-section-button">
-        <a href="https://form.jotform.com/231726585212455"><button class="product-button">Pre-Order Now!</button></a>
-      </div>
-      </div>
-    </section>
-
-    <!-- Introductory Session Ends -->
-    <!-- ##################################################################################### -->
-
-    <!-- About Us section begins -->
-    <section id="aboutUs">
-        <img src="product_icon/Group 634.png" alt="line art">
-        <div class="content">
-            <h3 style="font-size: 47px;color: #ffffff;font-weight: 300;line-height: 10px;">Democratizing</h2>
-            <h2 >Robots</h2>
-            <p class="description-aboutus">
-              Orangewood builds AI-powered robotic arms that are simple to operate. 
-              We make collaborative robots safe, affordable and capable of
-              coping with modern day manufacturing challenges.
-            </p>
-            <a href="https://cal.com/orangewoodlabs"><button class="btn-aboutus">Book a Demo</button></a>
-        </div>
-    </section>
-    <!-- About Us section ends -->
-    <!-- ##################################################################################### -->
-<br><br><br><br><br>
-    <!-- RobooGPT section starts -->
-    <section id="robogpt">
-        <video src="main/ROBO GPT.mp4" class="vid-bg" autoplay loop muted playsinline></video> 
-        <div class="welcome-text">
-
-          <h2><span>ROBO</span><span style="font-weight: 300;">GPT</span></h2>
-          <a href="robogpt.html"><button class="btn">Read More</button></a>
-        </div>
-    </section> 
-    <!-- RoboGPT section ends -->
-    <!-- ##################################################################################### -->
-
-    <!-- use cases starts -->
-
-    <section class="hidden">
-      <h2 class="text-usecases" style="text-align: right;font-size:90px;padding-right: 7.1%;">Use</h2>
-      <h2 class="text-usecases" style="text-align: right;font-size:76px;
-      padding-right: 7.1%;color: #ffffff; font-family:'geominast-bold';" >
-      <span >Cases</span> </h2>
-      <div class="space-holder">
-        <div class="sticky">
-          <div class="horizontal">
-            <section role="feed" class="cards">
-              <article class="sample-card">
-                <video src="main/Pick _ Place.mp4" muted class="vid" 
-                loop></video>
-                <!-- <video muted loop src="main/Pick _ Place.mp4" type='video/mp4'></video> -->
-                <p class="text-overlay">BIN PICKING</p>
-                <p class="video-description"> Enhance efficiency by reducing
-                   manual labor and empowering workers to focus on higher-value tasks.
-                </p>
-              </article>
-
-              <article class="sample-card">
-                <video src="main/Visual Inspection.mp4" muted class="vid3" 
-                loop></video>
-                <p class="text-overlay">VISUAL INSPECTION</p>
-                <p class="video-description">Streamline processes with revolutionizing precision analysis
-                   and enhanced quality control with unparalleled accuracy.
-              </p>
-              </article>
-
-              <article class="sample-card">
-                <video src="main/Powder Coating.mp4" muted class="vid2" 
-                loop></video>
-                <p class="text-overlay">POWDER COATING</p>
-                <p class="video-description"> Achieve flawless finishes with precision and efficiency, 
-                  empowering industries to elevate their
-                   coating process to new levels.
-
-                </p>
-              </article>
-
-              <article class="sample-card">
-                <video src="main/Bartending Bot.mp4" muted class="vid" 
-                loop></video>
-                <p class="text-overlay">BARTENDING BOT</p>
-                <p class="video-description">Elevate productivity and safeguard human 
-                  efforts with robotic prowess effortlessly retrieves objects.
-                </p>
-              </article>
-
-              <article class="sample-card">
-                <video src="main/Spray Painting.mp4" muted class="vid3" 
-                loop></video>
-                <p class="text-overlay">SPRAY PAINTING</p>
-                <p class="video-description">Minimize hazards and unlock
-                   limitless creative expression with enhanced safety.
-              </p>
-              </article>
-            
-            </section>
+      <div class="content-1">
+        <div class="video-section">
+          <div class="video-int">
+            <video src="main/Website Intro.mp4" autoplay loop muted playsinline></video>
           </div>
         </div>
       </div>
-    </section>
-    <!-- use cases ends -->
-    <!-- ##################################################################################### -->
-
-    <!-- Product Specification Start -->
-    <section class="header-wrap">
-    <h1 class="text-product">Product</h2>
-      <div class="wrap">
-        <div id="main-content">
-        <div class="video-container">
-          <video src="product_icon/GUI Animation Transparent0060-0440.mov" muted autoplay loop playsinline></video>
+        <div class="text-section">
+          <h1>ROBOTS</h1>
+          <h2>ARE HERE!</h2>
+          <div class="text-section-button">
+          <a href="https://form.jotform.com/231726585212455"><button class="product-button">Pre-Order Now!</button></a>
         </div>
         </div>
-        <div id="sidebar-left">
-        <div class="image-container">
-          <img src="product_icon/Group 593.png" alt="Image 1">
-          <p>Sub-Millimetre Repeatability</p>
+      </section>
+  
+      <!-- Introductory Session Ends -->
+      <!-- ##################################################################################### -->
+  
+      <!-- About Us section begins -->
+      <section id="aboutUs">
+          <img src="/product_icon/Group 634.png" alt="line art">
+          <div class="content">
+              <h3 style="font-size: 47px;color: #ffffff;font-weight: 300;line-height: 10px;">Democratizing</h2>
+              <h2 >Robots</h2>
+              <p class="description-aboutus">
+                Orangewood builds AI-powered robotic arms that are simple to operate. 
+                We make collaborative robots safe, affordable and capable of
+                coping with modern day manufacturing challenges.
+              </p>
+              <a href="https://cal.com/orangewoodlabs"><button class="btn-aboutus">Book a Demo</button></a>
+          </div>
+      </section>
+      <!-- About Us section ends -->
+      <!-- ##################################################################################### -->
+  <br><br><br><br><br>
+      <!-- RobooGPT section starts -->
+      <section class="robogpt-1">
+       
+          <video style="
+          top: 0;
+          left: 0;
+          width: 95%;
+          margin-left: 2.5%;
+          height: 80%;
+          border-radius: 25px 25px 25px;
+          object-fit: cover;
+          filter: brightness(70%);
+          z-index: -1;" src="/main/ROBO GPT.mp4" autoplay loop muted playsinline></video> 
+          <div class="welcome-text">
+  
+            <h2><span>ROBO</span><span style="font-weight: 300;">GPT</span></h2>
+            <a href="https://www.orangewood.co/robogpt/"><button class="btn">Read More</button></a>
+          </div>
+      </section> 
+      <!-- RoboGPT section ends -->
+      <!-- ##################################################################################### -->
+      <section class="robogpt-1 usecases">
+        <video 
+        style="
+        top: 0;
+        left: 0;
+        width: 95%;
+        margin-left: 2.5%;
+        height: 80%;
+        border-radius: 25px 25px 25px;
+        object-fit: cover;
+        filter: brightness(70%);
+        z-index: -1;"
+        src="main/Pick _ Place.mp4" class="vid-bg" autoplay loop muted playsinline></video> 
+        <div class="welcome-text">
+          <h2><span>Use </span><span style="font-weight: 300;">Cases</span></h2>
+          <a href="use-cases"><button class="btn">Know More</button></a>
         </div>
-        <div class="image-container">
-          <img src="product_icon/Group 595.png" alt="Image 2" >
-          <p>830 Millimetre Reach</p>
+    </section> 
+      <!-- use cases starts -->
+  
+      <section class="hidden">
+        <h2 class="text-usecases" style="text-align: right;font-size:90px;padding-right: 7.1%;">Use</h2>
+        <h2 class="text-usecases" style="text-align: right;font-size:76px;
+        padding-right: 7.1%;color: #ffffff; font-family:'geominast-bold';" >
+        <span >cases</span> </h2>
+        <div class="space-holder">
+          <div class="sticky">
+            <div class="horizontal">
+              <section role="feed" class="cards">
+                <article class="sample-card">
+                  <video src="main/Pick _ Place.mp4" muted class="vid" 
+                  loop></video>
+                  <!-- <video muted loop src="main/Pick _ Place.mp4" type='video/mp4'></video> -->
+                  <p class="text-overlay">BIN PICKING</p>
+                  <p class="video-description"> Enhance efficiency by reducing manual labor and empowering workers to focus on higher-value tasks.
+                  </p>
+                </article>
+  
+                <article class="sample-card">
+                  <video src="main/Visual Inspection.mp4" muted class="vid3" 
+                  loop></video>
+                  <p class="text-overlay">VISUAL INSPECTION</p>
+                  <p class="video-description">Streamline processes with revolutionizing precision analysis and enhanced quality control with unparalleled accuracy.
+                </p>
+                </article>
+  
+                <article class="sample-card">
+                  <video src="main/Powder Coating.mp4" muted class="vid2" 
+                  loop></video>
+                  <p class="text-overlay">POWDER COATING</p>
+                  <p class="video-description"> Achieve flawless finishes with precision and efficiency,empowering industries to elevate their coating process to new levels.
+  
+                  </p>
+                </article>
+  
+                <article class="sample-card">
+                  <video src="main/Bartending Bot.mp4" muted class="vid" 
+                  loop></video>
+                  <p class="text-overlay">BARTENDING BOT</p>
+                  <p class="video-description">Elevate productivity and safeguard human efforts with robotic prowess effortlessly retrieves objects.
+                  </p>
+                </article>
+  
+                <article class="sample-card">
+                  <video src="main/Spray Painting.mp4" muted class="vid3" 
+                  loop></video>
+                  <p class="text-overlay">SPRAY PAINTING</p>
+                  <p class="video-description">Minimize hazards and unlock limitless creative expression with enhanced safety.
+                </p>
+                </article>
+              
+              </section>
+            </div>
+          </div>
         </div>
-        <div class="image-container">
-          <img src="product_icon/Group 596.png" alt="Image 3" >
-          <p>Tele Programming</p>
+      </section>
+      <!-- use cases ends -->
+      <!-- ##################################################################################### -->
+  
+      <!-- Product Specification Start -->
+      <section class="header-wrap">
+      <h1 class="text-product">Product</h2>
+        <div class="wrap">
+          <div id="main-content">
+          <div class="video-container">
+            <video src="/product_icon/GUI Animation Transparent0060-0440.mov" muted autoplay loop playsinline></video>
+          </div>
+          </div>
+          <div id="sidebar-left">
+          <div class="image-container">
+            <img src="/product_icon/Group 593.png" alt="Image 1">
+            <p>Sub-Millimetre Repeatability</p>
+          </div>
+          <div class="image-container">
+            <img src="/product_icon/Group 595.png" alt="Image 2" >
+            <p>830 Millimetre Reach</p>
+          </div>
+          <div class="image-container">
+            <img src="/product_icon/Group 596.png" alt="Image 3" >
+            <p>Tele Programming</p>
+          </div>
+          </div>
+          <div id="sidebar-right">
+          <div class="image-container">
+            <img src="/product_icon/Group 597.png" alt="Image 4">
+            <p>Smart Safety Sensors</p>
+          </div>
+          <div class="image-container">
+            <img src="/product_icon/Group 635.png" alt="Image 5">
+            <p>6 Degrees of Freedom</p>
+          </div>
+          <div class="image-container">
+            <img src="/product_icon/Group 598.png" alt="Image 6">
+            <p>5 kgs Payload</p>
+          </div>
+          </div>
         </div>
-        </div>
-        <div id="sidebar-right">
-        <div class="image-container">
-          <img src="product_icon/Group 597.png" alt="Image 4">
-          <p>Smart Safety Sensors</p>
-        </div>
-        <div class="image-container">
-          <img src="product_icon/Group 635.png" alt="Image 5">
-          <p>6 Degrees of Freedom</p>
-        </div>
-        <div class="image-container">
-          <img src="product_icon/Group 598.png" alt="Image 6">
-          <p>5 kgs Payload</p>
-        </div>
+      </section> 
+    
+      <div id="cookiePopup" class="hide">
+       
+        <p>
+          Our website uses cookies to provide your browsing experience and
+          relevant information. Before continuing to use our website, you agree &
+          accept of our <a href="/privacy-policy/">Cookie Policy & Privacy.</a>
+        </p>
+        <button id="acceptCookie">Accept</button>
+      </div>
+  
+      <div class="home-container">
+        <div class="home-content">
+          <div class="home-text">
+            <h2>Join the</h2>
+            <h1>Community</h1>
+            <a href="https://form.jotform.com/231726801817053">
+            <button type="button" class="btn-aboutus" style="margin-top: 11%;margin-left: 30%;">Know more</button>
+          </a>
+          </div>
+          <img src="/product_icon/website render 1 1 (1).png" alt="image" class="home-image"> 
         </div>
       </div>
-    </section> 
-  
-    <div id="cookiePopup" class="hide">
-     
-      <p>
-        Our website uses cookies to provide your browsing experience and
-        relevant information. Before continuing to use our website, you agree &
-        accept of our <a href="privacypolicy.html">Cookie Policy & Privacy.</a>
-      </p>
-      <button id="acceptCookie">Accept</button>
-    </div>
     <!-- Product Specification End -->
     <!-- ##################################################################################### -->
     <!-- Footer Start -->
@@ -267,27 +402,28 @@
           <div class="col-sm-12 col-md-6">
             <h2 class="head-contact contact">Contact</h2>
             <br>
+    
             <p class="text-justify">
-              <b style="color: #ffffff;">Orangewood Labs Inc.</b>
-              <p style="color: #ffffff;font-weight: 100">2 Marina Blvd, Building B, 2nd floor, San Francisco, CA 94123</p>
-               <b style="color: #ffffff;">Orangewood Research and Advancement Private Limited</b>
-               
-               <p style="color: rgb(255, 255, 255);font-weight: 100">A 48, Block A, Sector 67, Noida, Uttar Pradesh 201301</p> 
-              <p>
-              <p style="color: #ffffff; font-style: normal; font-weight: 700;
+            <p style="color: #ffffff; font-style: normal; font-weight: 700;
               font-size: 15px; line-height: 10px; letter-spacing: 0.02em;">hellorobot@orangewood.co</p>
-            </p>
-           
-         
-            
-            <p>  </p>
-          
+              <b style="color: #ffffff;">Orangewood Labs Inc.</b>
+              <a style="text-decoration: none;"href="https://www.google.com/maps/place/2+Marina+Blvd+Building+D,+Suite+230,+San+Francisco,+CA+94123,+USA/@37.8067621,-122.4318375,19.91z/data=!4m14!1m7!3m6!1s0x808580d8d708cbcb:0x76e79872a5c02c42!2s2+Marina+Blvd+Building+B,+2nd+floor,+San+Francisco,+CA+94123,+USA!3b1!8m2!3d37.8067224!4d-122.4313474!3m5!1s0x808581276103415b:0xbdb1ce4377234aef!8m2!3d37.8067224!4d-122.4313474!16s%2Fg%2F11tj148sb0?entry=ttu">
+              <p style="color: #ffffff;font-weight: 100">2 Marina Blvd, Building B, 2nd floor, San Francisco, CA 94123</p>
+              </a>
+               <b style="color: #ffffff;">Orangewood Research and Advancement Private Limited</b>
+               <a style="text-decoration: none;" href="https://www.google.com/maps/place/Orangewood+Labs/@28.6023207,77.3802372,18.78z/data=!4m14!1m7!3m6!1s0x390cef87b97e5dfd:0xec925038feb4ea5e!2sa,+48,+Block+A,+Sector+67,+Noida,+Uttar+Pradesh+201301!3b1!8m2!3d28.6026065!4d77.3803357!3m5!1s0x390ce51fe06e83ed:0x2b35c5534a642628!8m2!3d28.6025986!4d77.3802415!16s%2Fg%2F11rwq7btsk?entry=ttu" target="_blank">
+                <p style="color: rgb(255, 255, 255); font-weight: 100;">A 48, Block A, Sector 67, Noida, Uttar Pradesh 201301</p>
+              </a>             
             </p>
             <br><br>
-            <p>            <a href="privacypolicy.html"  style="color: #ffffff;text-decoration: none;">Privacy Policy </a>
-              <a href="t&c.html"  style="color: #ffffff; padding-left: 5px;text-decoration: none;">Terms and Conditions</a>
+            <p>
+              <a  href="privacypolicy.html"  style="color: #ffffff;text-decoration: none; ">Privacy Policy | </a>
+              <a  href="t&c.html"  style="color: #ffffff; padding-left: 1px;text-decoration: none;">Terms and Conditions</a>
             </p>
               <ul class="social-icons">
+                
+    
+    
                 <li><a class="facebook" href="https://www.instagram.com/orangewoodlabs/?hl=en"><i class="fab fa-instagram"></i></a></li>
                 <li><a class="twitter" href="https://twitter.com/OrangewoodLabs"><i class="fab fa-twitter"></i></a></li>
                 <li><a class="dribbble" href="https://www.youtube.com/@OrangewoodLabs"><i class="fab fa-youtube"></i></a></li>
@@ -295,16 +431,30 @@
               </ul>
       
           </div>
-      
-          <div class="col-6 col-md-3">
-            <h6 style="color:transparent;">Categories</h6>
-            <ul class="footer-links">
+    
+          <div class="col-sm-12 col-md-6 laptop-footer">
+            <h3 style="color:white;">Backed By</h3>
+            <ul class="social-icons-1">
+              <li><a href="https://www.ycombinator.com/"><img src='https://svgshare.com/i/uxm.svg' title='ycom' height="40px"></a></li>
+              <li><a href="https://www.linkedin.com/company/for-good-ventures"><img src="https://svgshare.com/i/uzU.svg" alt="" height="40px"></a></li>
+              <li><a href="https://www.7pc.vc/"><img src="https://svgshare.com/i/uxn.svg" alt="" height="40px"></a></li>
+              <li><a href="https://f.inc/"><img src="https://svgshare.com/i/uwX.svg" alt="" height="40px"></a></li>  
+              <li><a href="https://www.schox.com/"><img src="https://svgshare.com/i/uzE.svg" alt="" height="40px"></a></li>  
+            </ul>
+            
+              <br>
+            <h3 style="color:white;">Partners</h3>
+            <ul class="social-icons-1">
+    
+                <li><a  href="https://www.viam.com/try-viam-robotics-software?utm_source=google&utm_medium=cpc&utm_campaign=try-viam-search&gclid=CjwKCAjwqZSlBhBwEiwAfoZUIKGmq-GXoNAcDa6ypX9TeD33isQvfJPdWsmjEKnltpomx7f5TtrpmRoCemQQAvD_BwE"><img src="https://svgshare.com/i/uze.svg" alt="" height="40px"></a></li>
+                <li><a  href="https://picknik.ai/"><img src="https://svgshare.com/i/uyn.svg" alt="" height="41px"></a></li>
             </ul>
           </div>
+     
       
-          <div class="col-6 col-md-3">
+          <!-- <div class="col-6 col-md-3">
             <img src="product_icon/footer.png" alt="Your Image" style="float: right;">
-          </div>
+          </div> -->
         </div>
       
       </div>
